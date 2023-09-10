@@ -9,3 +9,12 @@ pub enum Puzzles {
     Day1,
     Day2,
 }
+
+impl Puzzles {
+    pub fn run(self) {
+        match self {
+            Puzzles::Day1 => day_1::run(),
+            Puzzles::Day2 => day_2::run(),
+        }
+    }
+}
