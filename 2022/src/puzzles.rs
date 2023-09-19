@@ -2,6 +2,7 @@ pub mod day_1;
 pub mod day_2;
 pub mod day_3;
 pub mod day_4;
+pub mod day_5;
 
 use clap::ValueEnum;
 
@@ -13,6 +14,7 @@ pub enum Puzzles {
     Day3,
     Day3Part2,
     Day4,
+    Day5,
 }
 
 impl Puzzles {
@@ -23,6 +25,7 @@ impl Puzzles {
             Puzzles::Day3 => day_3::run(),
             Puzzles::Day3Part2 => day_3::run_part_2(),
             Puzzles::Day4 => day_4::run(),
+            Puzzles::Day5 => day_5::run(),
         }
     }
 }
